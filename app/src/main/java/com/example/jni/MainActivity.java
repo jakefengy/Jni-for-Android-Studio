@@ -3,6 +3,7 @@ package com.example.jni;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -17,6 +18,8 @@ public class MainActivity extends Activity {
 
         TextView tv = (TextView) findViewById(R.id.my_textview);
         tv.setText(getStringFromNative());
+
+        Toast.makeText(this, getStringFromNative(), Toast.LENGTH_SHORT).show();
 
     }
 
