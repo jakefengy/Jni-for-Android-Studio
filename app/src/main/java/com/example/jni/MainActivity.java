@@ -28,4 +28,5 @@ public class MainActivity extends Activity {
 
     public native String getStringFromNative();
 
+
 }
